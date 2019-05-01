@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    hostname: lotus-eureka.herokuapp.com
+    port: 443
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: https://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
