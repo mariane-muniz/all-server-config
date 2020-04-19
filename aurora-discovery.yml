@@ -7,6 +7,14 @@ eureka:
       defaultZone: http://localhost:${server.port}/eureka
     fetch-registry: false
 
+logging:
+  level:
+    root: info
+  file:
+    max-history: 1
+    max-size: 10MB
+    name: /home/scott/Projects/logs/configuration.log
+
 management:
   endpoint:
     shutdown:
