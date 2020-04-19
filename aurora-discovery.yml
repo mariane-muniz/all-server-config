@@ -13,7 +13,7 @@ logging:
   file:
     max-history: 1
     max-size: 10MB
-    name: /home/scott/Projects/logs/configuration.log
+    name: /home/scott/Projects/logs/discovery.log
 
 management:
   endpoint:
