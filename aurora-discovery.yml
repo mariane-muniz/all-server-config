@@ -6,3 +6,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:${server.port}/eureka
     fetch-registry: false
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+endpoints:
+  shutdown:
+    enabled: true
